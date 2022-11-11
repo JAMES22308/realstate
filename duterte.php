@@ -67,7 +67,7 @@
     <form action="submitted.php" method="get">
         <div class="div container">
             <div class="image d-flex justify-content-center align-items-center">
-            <img src="preslogo.png" alt="">
+            <img src="images/preslogo.png" alt="">
             </div>
             
             <div class="wrapper-parent ">
