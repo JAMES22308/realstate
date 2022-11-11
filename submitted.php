@@ -50,7 +50,7 @@
 
 <body>
     <div class="wrapper-image">
-    <h1><img src="images/preslogo.png" alt=""> <strong>Thankyou for registering the form!</strong> <h3><img src="images/check.png" alt=""> </h3></h1>
+    <h1><img src="preslogo.png" alt=""> <strong>Thankyou for registering the form!</strong> <h3><img src="check.png" alt=""> </h3></h1>
     </div>
     
     

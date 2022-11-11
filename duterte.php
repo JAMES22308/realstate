@@ -54,7 +54,11 @@
         color: white;
         font-weight: bold;
     }
-    
+    form{
+        background-color: rgb(32,33,36);
+        background-position: center;
+        background-size: cover;
+    }
 </style>
 <body>
 
@@ -63,7 +67,7 @@
     <form action="submitted.php" method="get">
         <div class="div container">
             <div class="image d-flex justify-content-center align-items-center">
-            <img src="images/preslogo.png" alt="">
+            <img src="preslogo.png" alt="">
             </div>
             
             <div class="wrapper-parent ">
