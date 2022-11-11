@@ -93,7 +93,7 @@
             <label for="city"><b>City</b></label>
             <select name="city" id="city" required>
                 <option value=""> </option>
-                <option value="MANILA">MANILAs</option>
+                <option value="MANILA">MANILA</option>
                 <option value="CEBU">CEBU</option>
                 <option value="DAVAO">DAVAO</option>
             </select>
