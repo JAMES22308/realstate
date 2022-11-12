@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>PROTECH</h1>
+    <div class="div" id="root">
+      <img
+        src="https://apod.nasa.gov/apod/image/2211/LunarEclipseRyanHan1024.jpg"
+        alt=""
+      />
+    </div>
+
+    <script>
+
+      const fetchData = async () => {
+
+          const api = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+          const response = await fetch(api);
+          const data = await response.json();
+
+          const rootHTML = document.getElementById("root");
+          const element = <h1>  \ ${data.explanation} \` `;
+          rootHTML.innerHTML += element;
+      }
+
+      fetchData()
+    </script>
+  </body>
+</html>

@@ -54,11 +54,17 @@
         color: white;
         font-weight: bold;
     }
-    form{
-        background-color: rgb(32,33,36);
-        background-position: center;
-        background-size: cover;
+    .wrapper-contact select{
+        height: 35px;
+        width: 189px;
+        margin-left: -10px;
+        margin-right: 10px;
     }
+    .wrapper-input{
+        position: absolute;
+
+    }
+    
 </style>
 <body>
 
@@ -71,8 +77,8 @@
             </div>
             
             <div class="wrapper-parent ">
-            <h1>REGISTRATION FORM</h1>`
-            <p>Fill this out!</p>
+            <h1>REGISTRATION FORM</h1>
+            <p>Fill this tvcking out!</p>
 
             <div class="wrapper-info d-flex justify-content-center align-items-center">
 
@@ -88,8 +94,18 @@
             
 
             <div class="wrapper-contact">
-            <label for="email"> <b>Contact</b></label>
-            <input type="email" name="email" required>
+            <label for="select"> <b>Contact</b> </label>
+            <select name="select" id="select" class="form-control" onchange="handleSelect()" required>
+                <option value="">select choice</option>
+                <option value="phone">phone</option>
+                <option value="email">email</option>
+            </select>
+            <div class="wrapper-input" required >
+            <input type="email" id="email" type="text" placeholder="email"  />
+            <input id="phone" type="text" placeholder="phone" />
+            </div>
+            
+            
             </div>
 
 
@@ -124,7 +140,24 @@
     </table>
     
 </div>
+<script>
+      document.getElementById("phone").style.display = "none";
+      document.getElementById("email").style.display = "none";
 
+      function handleSelect() {
+        const value = document.getElementById("select").value;
+
+        console.log(value);
+
+        if (value === "phone") {
+          document.getElementById("phone").style.display = "block";
+          document.getElementById("email").style.display = "none";
+        } else {
+          document.getElementById("email").style.display = "block";
+          document.getElementById("phone").style.display = "none";
+        }
+      }
+    </script>
   
 </body>
 </html>
