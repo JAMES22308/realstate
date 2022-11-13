@@ -79,7 +79,6 @@
         font-weight: bold;
     }
     
-    
 </style>
 <body>
     <div class="logo">
