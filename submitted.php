@@ -45,10 +45,28 @@
         right: 290px;
         top: 133px;
     }
+    .logo img{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        right: 1px;
+        top: 1px;
+    }
+    .logo p{
+        position: absolute;
+        right: 2px;
+        top: 100px;
+        font-size: 11px;
+        font-weight: bold;
+    }
 </style>
 </head>
 
 <body>
+    <div class="logo">
+        <img src="images/jameslogo.png" alt="">
+        <p>Protech, James Inc.</p>
+        </div>
     <div class="wrapper-image">
     <h1><img src="images/preslogo.png" alt=""> <strong>Thankyou for registering the form!</strong> <h3><img src="images/check.png" alt=""> </h3></h1>
     </div>

@@ -64,9 +64,28 @@
         position: absolute;
 
     }
+    .logo img{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        right: 1px;
+        top: 1px;
+    }
+    .logo p{
+        position: absolute;
+        right: 2px;
+        top: 100px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    
     
 </style>
 <body>
+    <div class="logo">
+       <img src="images/jameslogo.png" alt="">
+       <p>Protech, James Inc.</p>
+    </div>
 
 <div>
     <table border="1">
@@ -78,7 +97,7 @@
             
             <div class="wrapper-parent ">
             <h1>REGISTRATION FORM</h1>
-            <p>Fill this tvcking out!</p>
+            <p>Fill this out!</p>
 
             <div class="wrapper-info d-flex justify-content-center align-items-center">
 
