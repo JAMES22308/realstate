@@ -57,7 +57,8 @@
 <div>
     <div class="wrapper-display ">
     <strong>NAME </strong> <?php echo $_GET['firstname'] . ' ' . $_GET['lastname'] ?> <br>
-    <strong>CONTACT </strong> <?php echo $_GET['email'] ?> <br>
+    <strong>EMAIL </strong> <?php echo $_GET['email'] ?> <br>
+    <strong>PHONE </strong> <?php echo $_GET['phone'] ?> <br>
     <strong>CITY </strong> <?php echo $_GET['city'] ?> <br>
     <strong>COMMENT </strong> <?php echo $_GET['comment'] ?>
     </div>

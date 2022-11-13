@@ -95,14 +95,15 @@
 
             <div class="wrapper-contact">
             <label for="select"> <b>Contact</b> </label>
-            <select name="select" id="select" class="form-control" onchange="handleSelect()" required>
+            <select name="select" id="select" class="form-control" onchange="javascript()" required>
                 <option value="">select choice</option>
                 <option value="phone">phone</option>
                 <option value="email">email</option>
             </select>
-            <div class="wrapper-input" required >
-            <input type="email" id="email" type="text" placeholder="email"  />
-            <input id="phone" type="text" placeholder="phone" />
+            <div class="wrapper-input" name="contact" id="contact" for="contact" required >
+                <input name="email" type="email" id="email" type="text" placeholder="email"  />
+                 <input name="phone" id="phone" type="text" placeholder="phone" />
+            
             </div>
             
             
@@ -144,7 +145,7 @@
       document.getElementById("phone").style.display = "none";
       document.getElementById("email").style.display = "none";
 
-      function handleSelect() {
+      function javascript() {
         const value = document.getElementById("select").value;
 
         console.log(value);
