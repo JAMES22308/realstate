@@ -95,7 +95,7 @@
             </div>
             
             <div class="wrapper-parent ">
-            <h1>REGISTRATION FORM</h1>
+            <h1>REGISTRATIONs FORM</h1>
             <p>Fill this out!</p>
 
             <div class="wrapper-info d-flex justify-content-center align-items-center">
