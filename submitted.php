@@ -74,7 +74,7 @@
     <div class="wrapper-image d-flex align-items-center justify-content-center ">
     <img src="images/preslogo.png" alt="">
         <div class="child w-100 d-flex align-items-center justify-content-start">
-        <h1 class="thanks text-white">THANKYOU!</h1>
+        <h1 class="thanks text-white">THANKYOU FOR REGISTERING THE FORM!</h1>
         <img src="images/check.png" alt="">
         </div>    
    
