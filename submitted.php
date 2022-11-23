@@ -29,8 +29,12 @@
         width: 300px;
         height: 300px;
         border-radius: 150px;
-        margin: 20px;
-        margin-bottom: 40px
+        margin: 0px;
+       margin-bottom: 10px;
+       margin-right: 0px;
+    }
+    .wrapper-image{
+        margin-right: 0px;
     }
     .wrapper-image strong{
         font-weight: bold;
@@ -38,12 +42,10 @@
         padding: 0px;
         margin: 0px;
     }
-    .wrapper-image h3 img{
+    .child img{
         height: 40px;
         width: 40px;
-        position: absolute;
-        right: 290px;
-        top: 133px;
+        
     }
     .logo img{
         position: absolute;
@@ -59,24 +61,52 @@
         font-size: 11px;
         font-weight: bold;
     }
+    
 </style>
 </head>
 
 <body>
+    <div class="parent bg-primary">
     <div class="logo">
         <img src="images/jameslogo.png" alt="">
-        <p>Protech, James Inc.</p>
+        <p class="pro text-white">Protech, James Inc.</p>
         </div>
-    <div class="wrapper-image">
-    <h1><img src="images/preslogo.png" alt=""> <strong>Thankyou for registering the form!</strong> <h3><img src="images/check.png" alt=""> </h3></h1>
+    <div class="wrapper-image d-flex align-items-center justify-content-center ">
+    <img src="images/preslogo.png" alt="">
+        <div class="child w-100 d-flex align-items-center justify-content-start">
+        <h1 class="thanks text-white">THANKYOU FOR REGISTERING THE FORM!</h1>
+        <img src="images/check.png" alt="">
+        </div>    
+   
+    </div>
     </div>
     
     
+    
 <div>
-    <div class="wrapper-display ">
+    <div class="wrapper-display my-5">
     <strong>NAME </strong> <?php echo $_GET['firstname'] . ' ' . $_GET['lastname'] ?> <br>
-    <strong>EMAIL </strong> <?php echo $_GET['email'] ?> <br>
-    <strong>PHONE </strong> <?php echo $_GET['phone'] ?> <br>
+
+    <strong><?php   
+
+        if ($_GET['select'] == "phone"){
+            echo "Phone ";
+        }
+        else{
+            echo "Email";
+        }
+    
+
+    ?>  </strong> <?php    
+        if ($_GET['select'] == "phone"){
+            echo $_GET['phone'];
+        }else{
+            echo $_GET['email'];
+        }
+
+
+    ?> <br>
+
     <strong>CITY </strong> <?php echo $_GET['city'] ?> <br>
     <strong>COMMENT </strong> <?php echo $_GET['comment'] ?>
     </div>
